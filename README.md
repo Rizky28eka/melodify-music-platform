@@ -78,6 +78,34 @@ lib/
 
 ## Demo / Screenshots
 
+<hr/>
+
+<h2>Demo / Screenshots</h2>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/homepage.png" width="300"/><br/>
+      <b>Halaman Utama</b>
+    </td>
+    <td align="center">
+      <img src="images/searchpage.png" width="300"/><br/>
+      <b>Halaman Login</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/settingpage.png" width="300"/><br/>
+      <b>Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="images/detailsong.png" width="300"/><br/>
+      <b>Profil Pengguna</b>
+    </td>
+  </tr>
+</table>
+
+<hr/>
 
 ## Future Improvements
 - Social features integration
