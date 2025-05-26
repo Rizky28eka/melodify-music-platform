@@ -85,21 +85,21 @@ lib/
 <table>
   <tr>
     <td align="center">
-      <img src="images/homepage.png" width="300"/><br/>
+      <img src="images/homepage.png" width="200"/><br/>
       <b>Halaman Utama</b>
     </td>
     <td align="center">
-      <img src="images/searchpage.png" width="300"/><br/>
+      <img src="images/searchpage.png" width="200"/><br/>
       <b>Halaman Login</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="images/settingpage.png" width="300"/><br/>
+      <img src="images/settingpage.png" width="200"/><br/>
       <b>Dashboard</b>
     </td>
     <td align="center">
-      <img src="images/detailsong.png" width="300"/><br/>
+      <img src="images/detailsong.png" width="200"/><br/>
       <b>Profil Pengguna</b>
     </td>
   </tr>
