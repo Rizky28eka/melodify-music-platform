@@ -86,21 +86,21 @@ lib/
   <tr>
     <td align="center">
       <img src="images/homepage.png" width="200"/><br/>
-      <b>Halaman Utama</b>
+      <b>Home Screen</b>
     </td>
     <td align="center">
       <img src="images/searchpage.png" width="200"/><br/>
-      <b>Halaman Login</b>
+      <b>Search Screen</b>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="images/settingpage.png" width="200"/><br/>
-      <b>Dashboard</b>
+      <b>Setting Screen</b>
     </td>
     <td align="center">
       <img src="images/detailsong.png" width="200"/><br/>
-      <b>Profil Pengguna</b>
+      <b>Detail Music Screen</b>
     </td>
   </tr>
 </table>
