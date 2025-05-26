@@ -1,4 +1,4 @@
-# Melodify - Modern Music Streaming Experience
+## melodify-music-platform
 
 ## Project Overview
 Melodify is a modern, feature-rich music streaming application built with Flutter, offering an elegant and intuitive user interface for music enthusiasts. The app combines beautiful design with powerful functionality to deliver an exceptional music listening experience.
@@ -113,6 +113,3 @@ lib/
 - All package contributors
 - Design inspiration from modern music apps
 - Circular Std font family creators
-
-
-# Melodify---Modern-Music-Streaming-Experience
