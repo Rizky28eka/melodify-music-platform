@@ -97,7 +97,7 @@ lib/
 1. Ensure you have Flutter SDK installed
 2. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/Rizky28eka/melodify-music-platform.git
    ```
 3. Install dependencies:
    ```bash
