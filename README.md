@@ -1,7 +1,7 @@
-## melodify-music-platform
+# melodify-music-platform
 
 ## Project Overview
-Melodify is a modern, feature-rich music streaming application built with Flutter, offering an elegant and intuitive user interface for music enthusiasts. The app combines beautiful design with powerful functionality to deliver an exceptional music listening experience.
+Melodify is a modern, feature-rich music streaming application built with Flutter, offering an elegant and intuitive user interface for music enthusiasts. The app combines beautiful design with powerful functionality to deliver an exceptional music listening experience. Its primary purpose is to provide a functional and visually appealing music playback experience on mobile devices (iOS and Android), allowing users to browse their music library, play songs, view artist and album details, and manage playlists.
 
 ## Problem Statement
 In today's digital age, music streaming apps often compromise either on user experience or functionality. Many apps either have cluttered interfaces or lack essential features that music lovers expect. Melodify addresses this gap by providing a seamless, feature-complete music streaming solution with a focus on user experience.
@@ -15,7 +15,7 @@ In today's digital age, music streaming apps often compromise either on user exp
 ## Tech Stack
 - **Frontend Framework**: Flutter
 - **State Management**: GetX
-- **Audio Handling**: 
+- **Audio Handling**:
   - just_audio
   - audio_service
 - **UI Components**:
@@ -33,15 +33,15 @@ In today's digital age, music streaming apps often compromise either on user exp
 
 ## Project Structure
 ```
-lib/
+.
 ├── assets/
 │   ├── img/
 │   └── fonts/
 ├── lib/
-│   ├── controllers/
-│   ├── models/
-│   ├── views/
-│   └── services/
+│   ├── audio_helpers/  # Logic for audio playback and services
+│   ├── models/         # Data models (e.g., songs, albums, artists)
+│   ├── pages/          # UI screens/pages of the application
+│   └── widget/         # Reusable UI widgets
 ├── test/
 └── pubspec.yaml
 ```
@@ -122,19 +122,36 @@ lib/
 - Effective use of custom fonts and assets
 
 ## Installation & Setup Guide
-1. Ensure you have Flutter SDK installed
+1. Ensure you have Flutter SDK installed.
 2. Clone the repository:
    ```bash
    git clone https://github.com/Rizky28eka/melodify-music-platform.git
    ```
-3. Install dependencies:
+3. Navigate to the project directory:
+   ```bash
+   cd melodify-music-platform
+   ```
+4. Install dependencies:
    ```bash
    flutter pub get
    ```
-4. Run the app:
-   ```bash
-   flutter run
-   ```
+
+## How to Run
+To run the application on a connected device or emulator:
+```bash
+flutter run
+```
+
+## Contributing
+Contributions are welcome! If you have suggestions for improvements, new features, or bug fixes, please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name` or `bugfix/your-bug-fix`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'feat: Add new feature'`).
+5. Push to the branch (`git push origin feature/your-feature-name`).
+6. Open a Pull Request.
+
+Please ensure your code adheres to the project's coding style and includes relevant tests.
 
 ## Credits / Acknowledgments
 - Flutter team for the amazing framework

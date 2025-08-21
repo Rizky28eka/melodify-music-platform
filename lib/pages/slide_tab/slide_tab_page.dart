@@ -52,7 +52,7 @@ class _SlideTabPageState extends State<SlideTabPage>
           padding: EdgeInsets.zero,
           children: [
             SizedBox(
-              height: 240,
+              height: 260,
               child: DrawerHeader(
                 decoration: BoxDecoration(
                   color: TColor.primaryText.withOpacity(0.03),
