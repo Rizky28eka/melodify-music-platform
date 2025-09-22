@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../artists/artist_detail_page.dart';
 import '../../models/artists_model.dart';
 import '../../widget/artist_row.dart';
-import 'artist_details_page.dart';
 
 class ArtistsPage extends StatefulWidget {
   const ArtistsPage({super.key});
@@ -27,7 +27,7 @@ class _ArtistsPageState extends State<ArtistsPage> {
             return ArtistRow(
               aObj: aObj,
               onPressed: () {
-                Get.to(() => const ArtistDetailsView());
+                Get.to(() => ArtistDetailPage(artist: aObj));
               },
               onPressedMenuSelect: (selectIndex) {},
             );

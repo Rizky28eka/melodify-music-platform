@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../albums/album_detail_page.dart';
 
 import '../../models/albums_model.dart';
 import '../../widget/album_cell.dart' show AlbumCell;
-import 'album_details_page.dart';
 
 class AlbumPage extends StatefulWidget {
   const AlbumPage({super.key});
@@ -38,7 +38,7 @@ class _AlbumPageState extends State<AlbumPage> {
             return AlbumCell(
               aObj: aObj,
               onPressed: () {
-                Get.to(() => const AlbumDetailsPage());
+                Get.to(() => AlbumDetailPage(album: aObj));
               },
               onPressedMenu: (selectIndex) {
                 if (kDebugMode) {

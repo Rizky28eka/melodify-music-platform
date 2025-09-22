@@ -30,6 +30,7 @@ class _AllSongsPageState extends State<AllSongsPage> {
               onPressedPlay: () {
                 Get.to(() => const MainPlayerPage());
               },
+              onPressedMenu: (p0) {},
             );
           },
         ),

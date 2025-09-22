@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import './queue_page.dart';
+import './lyrics_page.dart';
+import './behind_the_song_page.dart';
+import './equalizer_page.dart';
 import 'package:get/get.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import '../../AppStyle.dart';
@@ -53,6 +57,18 @@ class _MainPlayerPageState extends State<MainPlayerPage> {
             ),
             padding: EdgeInsets.zero,
             onSelected: (selectIndex) {
+              if(selectIndex == 10){
+                Get.to(() => const BehindTheSongPage());
+              }
+              if(selectIndex == 8){
+                Get.to(() => const EqualizerPage());
+              }
+              if(selectIndex == 4){
+                Get.to(() => const LyricsPage());
+              }
+              if(selectIndex == 2){
+                Get.to(() => const QueuePage());
+              }
               if (selectIndex == 9) {
                 Get.to(() => const DriverModePage());
               }
@@ -76,6 +92,11 @@ class _MainPlayerPageState extends State<MainPlayerPage> {
                     "Add to playlist...",
                     style: TextStyle(fontSize: 12),
                   ),
+                ),
+                const PopupMenuItem(
+                  value: 10, // New value for Behind the Song
+                  height: 30,
+                  child: Text("Behind the Song", style: TextStyle(fontSize: 12)),
                 ),
                 const PopupMenuItem(
                   value: 4,

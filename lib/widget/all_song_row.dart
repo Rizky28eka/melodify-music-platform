@@ -9,7 +9,7 @@ class AllSongRow extends StatelessWidget {
     super.key,
     required this.sObj,
     required this.onPressed,
-    required this.onPressedPlay,
+    required this.onPressedPlay, required Null Function(dynamic item) onPressedMenu,
   });
 
   @override

@@ -30,34 +30,31 @@ class SongsRow extends StatelessWidget {
               ),
             ),
             Expanded(
-                child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  sObj["name"],
-                  maxLines: 1,
-                  style: TextStyle(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    sObj["name"],
+                    maxLines: 1,
+                    style: TextStyle(
                       color: TColor.primaryText60,
                       fontSize: 13,
-                      fontWeight: FontWeight.w700),
-                ),
-                Text(
-                  sObj["artists"],
-                  maxLines: 1,
-                  style: TextStyle(color: TColor.secondaryText, fontSize: 10),
-                )
-              ],
-            )),
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  Text(
+                    sObj["artists"],
+                    maxLines: 1,
+                    style: TextStyle(color: TColor.secondaryText, fontSize: 10),
+                  ),
+                ],
+              ),
+            ),
             Column(
-              
               children: [
-                Image.asset(
-                  "assets/img/fav.png",
-                  width: 12,
-                  height: 12,
-                ),
+                Image.asset("assets/img/fav.png", width: 12, height: 12),
 
-                const SizedBox(height: 4,),
+                const SizedBox(height: 4),
                 IgnorePointer(
                   ignoring: true,
                   child: RatingBar.builder(
@@ -69,24 +66,19 @@ class SongsRow extends StatelessWidget {
                     itemCount: 5,
                     itemSize: 12,
                     itemPadding: EdgeInsets.zero,
-                    itemBuilder: (context, _) => Icon(
-                      Icons.star,
-                      color: TColor.org,
-                    ),
+                    itemBuilder: (context, _) =>
+                        Icon(Icons.star, color: TColor.org),
                     updateOnDrag: false,
                     onRatingUpdate: (rating) {
                       print(rating);
                     },
                   ),
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
-        Divider(
-          color: Colors.white.withOpacity(0.07),
-          indent: 50,
-        ),
+        Divider(color: Colors.white.withOpacity(0.07), indent: 50),
       ],
     );
   }

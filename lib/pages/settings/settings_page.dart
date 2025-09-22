@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:slicing_music_app/pages/profile/profile_page.dart';
 import '../../AppStyle.dart';
 import '../../models/splash_model.dart';
+
 import '../../widget/icon_text_row.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -40,6 +42,14 @@ class _SettingsPageState extends State<SettingsPage> {
       ),
       body: ListView(
         children: [
+          IconTextRow(
+            title: "Profile",
+            icon: "assets/img/s_menu.png", // Using a placeholder icon
+            onTap: () {
+              Get.to(() => const ProfilePage());
+            },
+          ),
+          const Divider(color: Colors.white12, height: 1),
           IconTextRow(
             title: "Display",
             icon: "assets/img/s_display.png",

@@ -243,10 +243,10 @@ class _PlayPlayListPageState extends State<PlayPlayListPage> {
 
                   return AllSongRow(
                     sObj: sObj,
-                    onPressed: () {},
-                    onPressedPlay: () {},
-                  );
-                },
+                                      onPressed: () {},
+                                      onPressedPlay: () {},
+                                      onPressedMenu: (i) {},
+                                    );                },
               ),
             ),
           ],
